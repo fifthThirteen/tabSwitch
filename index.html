@@ -39,7 +39,13 @@ p {
 <script type="text/javascript">
 // 注意: 传参数时，不要使用 "on" 前缀。 例如，使用 "click" ,而不是使用 "onclick"。
 window.onload=tab('tab_t','li','tab_c','div','mouseover');
-
+/*@param
+  tab_t:选项卡容器ID
+  tab_t_tag:选项卡元素标签
+  tab_c:切换内容容器ID
+  tab_c_tag:切换内容元素标签
+  evt:事件方法--onclick等事件不支持传参
+*/
 function tab(tab_t,tab_t_tag,tab_c,tag_c_tag,evt){
     var tab_t=document.getElementById(tab_t);
     var tab_t_li=tab_t.getElementsByTagName(tab_t_tag);
